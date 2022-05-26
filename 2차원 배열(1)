@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+  double sum = 0;
+  int cnt = 0;
+	int x[1000][1000];
+	for(int i=0; i<4; i++) {
+		for(int j=0; j<4; j++) {
+			scanf("%d", &x[i][j]);
+		}
+	}
+  for(int i=0; i<=4; i++) {
+    sum = (x[i][0] + x[i][1]+ x[i][2]+ x[i][3])/4.0;
+    if(sum >= 80) {
+      printf("pass\n");
+      cnt++;
+    }
+    else {
+      printf("fail\n");
+    }
+ }
+  printf("합격한 사람 : %d명", cnt);
+}
