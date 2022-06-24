@@ -1,0 +1,286 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+#include <Windows.h>
+
+int main() {
+	int g = 0, p = 0, h = 0;
+	int perfect = 0;
+	int short1 = 0;
+	int long1 = 0;
+	int moossang = 0;
+	int ssang = 0;
+	int song = 0;
+	int nsong = 0;
+	int tultul = 0;
+	int ntultul = 0;
+	int dance = 0;
+	int ndance = 0;
+	int handsome = 0;
+	int nhandsome = 0;
+	int mom = 0;
+	int nmom = 0;
+	int game = 0;
+	int ngame = 0;
+	int rapgosu = 0;
+	int nrapgosu = 0;
+	int young = 0;
+	int nyoung = 0;
+	int long2 = 0;
+
+	printf("당신의 성별은(Boy/Girl)");
+	printf("\n");
+
+	char a[4];
+	scanf("%s", &a);
+	if (a[0] == 'B') {
+		printf("\n");
+		printf("안녕하세요");
+		printf("\n");
+		Sleep(1000);
+		printf("질문 들어가도록 하겠습니다.");
+		printf("\n");
+		Sleep(1000);
+		printf("질문에 잘 응답한 후 당신의 이상형을 알아보세요");
+		printf("\n");
+		Sleep(1000);
+		printf("결과에는 제 개인적인 생각이 들어갈수 있습니다.");
+		Sleep(1000);
+		printf("\n");
+
+		printf("팔방 미인을 좋아하십니까?(Yes/No)");
+		char q1[5];
+		scanf("%s", &q1);
+		if (q1[0] == 'Y') {
+			perfect++;
+			if (perfect == 1) {
+				printf("\n");
+				Sleep(1000);
+				printf("두구두구두구두구");
+				Sleep(1000);
+				printf("\n");
+				printf("당신의 이상형은...");
+				printf("\n");
+				Sleep(1000);
+				printf("태연입니다");
+				return 0;
+			}
+		}
+
+		printf("당신은 키가 작은 여자를 좋아하십니까(Yes/No)");
+		char q2[5];
+		scanf("%s", &q2);
+		if (q2[0] == 'Y') {
+			short1++;
+		}
+		else {
+			long2++;
+		}
+
+		printf("당신은 무쌍을 좋아하십니까?(Yes/No)");
+		char q3[5];
+		scanf("%s", &q3);
+		if (q3[0] == 'Y') {
+			moossang++;
+		}
+		else {
+			ssang++;
+		}
+		
+
+		printf("노래를 잘하는 사람을 좋아하십니까?(Yes/No)");
+		char q4[5];
+		scanf("%s", &q4);
+		if (q4[0] == 'Y') {
+			song++;
+		}
+		else {
+			nsong++;
+		}
+
+		printf("털털한 사람을 좋아하십니까");
+		char q5[6];
+		scanf("%s", &q4);
+		if (q5[0] == 'Y') {
+			tultul++;
+		}
+		else {
+			ntultul++;
+		}
+
+		printf("춤을 잘 추는 여자를 좋아하십니까?");
+		char q6[6];
+		scanf("%s", &q6);
+		if (q6[0] = 'Y')
+		{
+			dance++;
+		}
+		else {
+			ndance++;
+		}
+
+		printf("랩 잘하는 여자를 좋아하십니까?(Yes/No)");
+		char q7[6];
+		scanf("%s", &q7);
+		if (q7[0] = 'Y')
+		{
+			rapgosu++;
+		}
+		else {
+			nrapgosu++;
+		}
+
+		if (long2 == 1 && ssang == 1) {
+			printf("\n");
+			Sleep(1000);
+			printf("두구두구두구두구");
+			Sleep(1000);
+			printf("\n");
+			printf("당신의 이상형은...");
+			printf("\n");
+			Sleep(1000);
+			printf("에스파 카리나 입니다");
+			return 0;
+		}
+
+		if (short1 == 1 && rapgosu == 1) {
+			printf("\n");
+			Sleep(1000);
+			printf("두구두구두구두구");
+			Sleep(1000);
+			printf("\n");
+			printf("당신의 이상형은...");
+			printf("\n");
+			Sleep(1000);
+			printf("래퍼 유시온 입니다");
+			return 0;
+		}
+
+		if (song == 1 && short1 == 1 ||  ) {
+			printf("\n");
+			Sleep(1000);
+			printf("두구두구두구두구");
+			Sleep(1000);
+			printf("\n");
+			printf("당신의 이상형은...");
+			printf("\n");
+			Sleep(1000);
+			printf("에스파 윈터 입니다");
+			return 0;
+		}
+		
+	}
+
+	else if (a[0] == 'G') {
+		printf("안녕하세요");
+		printf("\n");
+		Sleep(1000);
+		printf("질문 들어가도록 하겠습니다.");
+		printf("\n");
+		Sleep(1000);
+		printf("질문에 잘 응답한 후 당신의 이상형을 알아보세요");
+		printf("\n");
+		Sleep(1000);
+		printf("결과에는 제 개인적인 생각이 들어갈수 있습니다.");
+		Sleep(1000);
+
+		printf("완남(완벽한 남자) 좋아하십니까 ? (Yes / No)");
+		char q7[5];
+		scanf("%s", &q7);
+		if (q7[0] == 'Y') {
+			perfect++;
+			if (perfect == 1) {
+				printf("\n");
+				Sleep(1000);
+				printf("두구두구두구두구");
+				Sleep(1000);
+				printf("\n");
+				printf("당신의 이상형은...");
+				printf("\n");
+				Sleep(1000);
+				printf("남주혁 입니다");
+				return 0;
+			}
+		}
+
+		printf("노래 잘하는 남자를 좋아하십니까? (Yes/No)");
+		char q6[6];
+		scanf("%s", &q6);
+		if (q6[0] = 'Y')
+		{
+			song++;
+		}
+		else {
+			song++;
+		}
+
+		printf("잘생긴 남자를 좋아하십니까?(Yes/No)");
+		char q100[6];
+		scanf("%s", &q6);
+		if (q6[0] = 'Y')
+		{
+			handsome++;
+		}
+		else {
+			nhandsome++;
+		}
+
+		printf("근육의 남성을 좋아하십니까?(Yes/No)");
+		char q101[6];
+		scanf("%s", &q101);
+		if (q101[0] = 'Y')
+		{
+			mom++;
+		}
+		else {
+			nmom++;
+		}
+
+
+
+		printf("게임 잘하는 남성을 좋아하십니까?(Yes/No)");
+		char q102[6];
+		scanf("%s", &q102);
+		if (q102[0] == 'Y') {
+			game++;
+		}
+		else {
+			ngame++;
+		}
+
+		printf("랩을 잘하는 남자를 좋아하십니까?(Yes/No)");
+		char q103[6];
+		scanf("%s", &q103);
+		if (q103[0] == 'Y') {
+			rapgosu++;
+		}
+		else {
+			nrapgosu++;
+
+		}
+
+		printf("연하상을 좋아하십니까?(Yes/No)");
+		char q104[6];
+		scanf("%s", &q104);
+		if (q104[0] == 'Y') {
+			young++;
+			if (perfect == 1) {
+				printf("\n");
+				Sleep(1000);
+				printf("두구두구두구두구");
+				Sleep(1000);
+				printf("\n");
+				printf("당신의 이상형은...");
+				printf("\n");
+				Sleep(1000);
+				printf("최현욱 입니다");
+				return 0;
+			}
+		}
+		else {
+			nyoung++;
+		}
+	}
+	return 0;
+
+}
