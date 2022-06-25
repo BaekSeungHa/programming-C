@@ -27,6 +27,8 @@ int main() {
 	int young = 0;
 	int nyoung = 0;
 	int long2 = 0;
+	int yang = 0;
+	int nyang = 0;
 
 	printf("당신의 성별은(Boy/Girl)");
 	printf("\n");
@@ -156,7 +158,7 @@ int main() {
 			return 0;
 		}
 
-		if (song == 1 && short1 == 1 ||  ) {
+		if (song == short1 && short1 == ssang && ssang == song) {
 			printf("\n");
 			Sleep(1000);
 			printf("두구두구두구두구");
@@ -213,6 +215,17 @@ int main() {
 		else {
 			song++;
 		}
+	
+		printf("키가 큰 남자를 좋아하십니까? (Yes/No)");
+		char q109[6];
+		scanf("%s", &q109);
+		if (q109[0] = 'Y')
+		{
+			long1++;
+		}
+		else {
+			short1++;
+		}
 
 		printf("잘생긴 남자를 좋아하십니까?(Yes/No)");
 		char q100[6];
@@ -264,23 +277,72 @@ int main() {
 		scanf("%s", &q104);
 		if (q104[0] == 'Y') {
 			young++;
-			if (perfect == 1) {
-				printf("\n");
-				Sleep(1000);
-				printf("두구두구두구두구");
-				Sleep(1000);
-				printf("\n");
-				printf("당신의 이상형은...");
-				printf("\n");
-				Sleep(1000);
-				printf("최현욱 입니다");
-				return 0;
-			}
 		}
 		else {
 			nyoung++;
 		}
-	}
-	return 0;
 
+		printf("양아치상을 좋아하십니까?(Yes / No)");
+		char q105[6];
+		scanf("%s", &q105);
+		if (q105[0] == 'Y') {
+			yang++;
+		}
+		else {
+			nyang++;
+		}
+
+		if (yang == handsome) {
+			printf("\n");
+			Sleep(1000);
+			printf("두구두구두구두구");
+			Sleep(1000);
+			printf("\n");
+			printf("당신의 이상형은...");
+			printf("\n");
+			Sleep(1000);
+			printf("배우 우도환 입니다");
+			return 0;
+		}
+
+		if ((game == 1 && handsome == 1) && (game == 1 && young == 1)) {
+			printf("\n");
+			Sleep(1000);
+			printf("두구두구두구두구");
+			Sleep(1000);
+			printf("\n");
+			printf("당신의 이상형은...");
+			printf("\n");
+			Sleep(1000);
+			printf("롤 프로게이머 쵸비 입니다");
+			return 0;
+		}
+
+		if ((long1 ==1 && young == 1) || (handsome == 1 &&  young ==1) || (young ==1 && long1 == 1)) {
+			printf("\n");
+			Sleep(1000);
+			printf("두구두구두구두구");
+			Sleep(1000);
+			printf("\n");
+			printf("당신의 이상형은...");
+			printf("\n");
+			Sleep(1000);
+			printf("가수 임영웅 입니다");
+			return 0;
+		}
+
+		if (mom ==1 && handsome ==1) {
+			printf("\n");
+			Sleep(1000);
+			printf("두구두구두구두구");
+			Sleep(1000);
+			printf("\n");
+			printf("당신의 이상형은...");
+			printf("\n");
+			Sleep(1000);
+			printf("에이전트 H 입니다");
+			return 0;
+		}
+	}
+	return 0; 
 }
